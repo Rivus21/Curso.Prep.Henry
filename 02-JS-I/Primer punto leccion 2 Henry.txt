@@ -1,0 +1,93 @@
+
+VARIABLES
+
+- En JavaScribt (JS) una varible nos permite almacenar informcion que se denomina valor y operacion, para utilizarla mas adelante. Para crear variables en JS utilizamos las claves; var, let, const; seguidas de un espacio y el nombre que le asignaremos, despues de haber declarado nuestra variable y haberle asignado su nombre respetando el espacio entre ellas, le asignamos un valor o una operacion untilizando el signo "="
+
+
+STRNGS
+
+- Es una cadena de texto que esta entre comillas, ya sean dobles o simples, y uno de los tipos de datos mas comunes en JS
+
+
+FUNCIONES (argumentos, `return`)
+
+-Las funciones dirigen las variables, calculandolas, cambiandolas, dirigiendolas, como una especie de gerente del munodjo del JS. Son fundamentales en el lenguaje de la programacion, y son objetos que reciben el nombre de callable Objects u Ojetos Invocables, tienes las mismas propidedasd de un objeto.
+
+las funciones se constuyen de las tres siguientes forma;
+
+
+    function miFuncion() {}
+    var otraFuncion = function () {};
+    var yOtra = () => {};
+
+
+funcion miFuncion () {} es de la cual nos ocuparemos en las primera lecciones, la palabra clave funcion indica al program que lo que e viene a ejecutar es precisamente una funcion, despues de la funcion viene el nombre que por lo general la describe;
+
+
+fucion logbien() {console.log("bien");} logbien();
+
+
+* ARGUMENTOS
+
+A las funcicones basicas le podemos agregr argumentos;
+
+function logbien(nombre) {console.log('bien, ' + nombre);}
+
+logbien('Juan');
+
+
+Agregar un variable entre los parentises de nuestra funcion nos da la posibilidad de usarla;
+
+
+function logbien(nombre) {console.log( `Bien, ${nombre}`);}
+
+var miNombre = 'Juan';
+logbien(miNombre);
+
+
+Los arguementos se agregan poniendo una comoa entre ellos;
+
+
+function sumarDosNumeros(a, b) {var suma = a + b; return suma;}
+
+sumarDosNumeros(2, 3); // 5
+
+
+* RETURN 
+
+Le da salida a los datos de un funcion, solo se accede a esos datos a los cuales return le da la salida.
+
+function dividirDosNumeros(a, b {var producto = a / b;return producto;}
+
+dividirDosNumeros(6, 3); // 2
+console.log(producto); // undefined
+
+
+Return impide que se muestre otro dato de la funcion con console.log excepto el indicado por return, si solicita arroja undefined
+
+
+
+DECLARACIONES  "if"
+
+la declaracion"if" es un operador de flujo de control (control flow) mediante el cual declaramos que nuestra funcion indique si algo es "true"
+  
+
+function puedeManejar(edad) { if (edad > 18) {return true;} return false;}
+
+puedeManejar(22); // true
+
+
+En el ejemplo ateriro si la edad es mayor a 18 return true de lo contrario false.
+
+
+VALORES BOLEANOS "TRUE" "FALSE"
+
+El símbolo "mayor que" (>) que ve en el último ejemplo se llama Operador de comparación. Los operadores de comparación evalúan dos elementos y devuelven verdadero o falso. Estos operadores son: <, <=, >, > =, ===, ! ==. Aprenderemos más sobre estos operadores en la próxima lección.
+
+Es un codigo binario que aliemente el nucleo de las computadores, en JS de utiliza falso/verdadero
+
+
+
+
+
+
